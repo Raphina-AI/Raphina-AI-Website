@@ -169,7 +169,7 @@ app.get('/exportwaitlist', async (req,res)=>{
     const waitlist = await waitlistschema.find()
     const waitliststring = JSON.stringify(waitlist)
     // console.log(waitliststring)
-    fs.writeFileSync('waitlist.json', waitlist, (err)=>{
+    fs.writeFileSync('waitlist.json', waitliststring, (err)=>{
         if (err){console.log(err)}
     })
     const waitlistfile = __dirname+'/waitlist.json'
