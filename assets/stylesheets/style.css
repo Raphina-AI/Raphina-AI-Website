@@ -1,0 +1,290 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Comfortaa';
+    max-width: 100%;
+    background-color: white;
+    font-family: 'Gantari', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar-custom{
+    background-color: white;
+    opacity: 90%;
+}
+
+
+.custom-toggler .navbar-toggler-icon{
+    /* background-color: #42c2ff; */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 102, 51)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    
+}
+.navbar-toggler{
+    border: none;
+    color: white;
+}
+
+.color1{
+    color: rgb(0, 102, 51);
+}
+
+.transformed{
+    transform: translateY(100px);
+}
+
+
+
+.green-box1{
+    width: 80px;
+    height: 130px;
+    background-color: rgb(202, 132, 2);
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+}
+.green-box2{
+    width: 80px;
+    height: 130px;
+    background-color: rgb(202, 132, 2);
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    right: 0;
+    top: 400px;
+}
+
+
+.img-size{
+    z-index: 100;
+}
+.img-size1{
+    scale: 0.8;
+    z-index: 100;
+    position: relative;
+}
+.img-size2{
+    transform: scale(0.9);
+    padding-top:10px;
+}
+.img-size3{
+    scale: 0.8;
+}
+
+.backgreen{
+    background-color: rgba(0, 102, 51, 0.64);
+}
+
+.card{
+    --bs-card-border-radius: 15px;
+}
+@media screen and (max-width : 1200px){
+    .img-size{
+        scale: 0.9;
+        
+    }
+}
+@media screen and (max-width : 992px){
+    .img-size{
+        scale: 0.8;
+    }
+    .card{
+        width: 20rem;
+    }
+}
+@media screen and (max-width : 850px){
+    .img-size{
+        scale: 0.7;
+    }
+    .green-box2{
+        position: absolute;
+        right: 0;
+        top: 500px;
+        width: 60px;
+    }
+    .green-box1{
+        position: absolute;
+        left: 0;
+        top: 200px;
+        width: 60px;
+    }
+    
+}
+@media screen and (max-width : 768px){
+    .transformed{
+        transform: none
+    }
+    .img-size{
+        scale: 1;
+    }
+    .green-box2{
+        position: absolute;
+        right: 0;
+        top: 560px;
+        width: 60px;
+    }
+}
+@media screen and (max-width : 600px){
+    .img-size{
+        scale: 0.8;
+    }
+}
+
+footer a{
+    color: #006633;
+}
+
+.striked{
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-color:rgb(202, 132, 2) ;
+    -webkit-text-decoration-color:rgb(202, 132, 2) ;
+
+}
+
+.design1{
+    position: absolute;
+    left: 56%;
+    top: 10%;
+    scale: 0.8;
+    z-index: 1;
+}
+.design2{
+    position: absolute;
+    left: 23%;
+    top: 10%;
+    scale: 0.8;
+    z-index: 1;
+}
+.design3{
+    position: absolute;
+    left: 23%;
+    top: 70%;
+    scale: 0.8;
+    z-index: 1;
+}
+.design4{
+    position: absolute;
+    left: 56%;
+    top: 70%;
+    scale: 0.8;
+    z-index: 1;
+}
+.design5{
+    position: absolute;
+    left: 56%;
+    top: 800px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design6{
+    position: absolute;
+    left: 23%;
+    top: 800px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design7{
+    position: absolute;
+    left: 23%;
+    top: 1150px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design8{
+    position: absolute;
+    left: 56%;
+    top: 1150px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design9{
+    position: absolute;
+    left: 56%;
+    top: 1700px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design10{
+    position: absolute;
+    left: 23%;
+    top: 1700px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design11{
+    position: absolute;
+    left: 23%;
+    top: 2100px;
+    scale: 0.8;
+    z-index: 1;
+}
+.design12{
+    position: absolute;
+    left: 56%;
+    top: 2100px;
+    scale: 0.8;
+    z-index: 1;
+}
+.eclipse1{
+    position: absolute;
+    left: 20px;
+    top: 500px;
+    scale: 0.7;
+}
+.eclipse2{
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    scale: 0.7;
+}
+.eclipse3{
+    position: absolute;
+    right: 20px;
+    top: 900px;
+    scale: 0.7;
+}
+.eclipse4{
+    position: absolute;
+    left: 20px;
+    top: 1350px;
+    scale: 0.7;
+}
+.eclipse5{
+    position: absolute;
+    right: 20px;
+    top: 1800px;
+    scale: 0.7;
+}
+.eclipse6{
+    position: absolute;
+    left: 20px;
+    top: 2200px;
+    scale: 0.7;
+}
+.spaced{
+    letter-spacing: 3px;
+}
+
+.about-title{
+    display: inline-block;
+    background-color: #00663354;
+    border-radius: 5px;
+}
+
+.lightbg{
+    background-color: #0066332a;
+}
+
+.waitlist-modal{
+    color: whitesmoke;
+    background-color: #006633;
+}
+
+.btn-custom{
+    --bs-btn-bg: rgb(202, 132, 2);
+    --bs-btn-color: white;
+    --bs-btn-hover-bg: rgba(202, 132, 2, 0.87);
+}

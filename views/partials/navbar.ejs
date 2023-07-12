@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-custom align-middle px-sm-5 px-2 " >
+    <div class="container-fluid m-0 p-0">
+        <a class="navbar-brand p-2 py-0 " href="/">
+          <img src="/assets/images/logo.png" alt="logo" class="nav_logo" width="177px" height="51">
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse navbar-collapse-custom m-0 p-0" id="navbarSupportedContent">
+        <div class="mx-auto">
+            <ul class="navbar-nav ms-lg-5 text-center">
+                    <li class="nav-item ms-lg-5 pe-lg-3 ps-lg-5 fs-5 fw-semibold">
+                        <a class="nav-link" href="/" >Home</a>
+                      </li>
+                      <li class="nav-item px-lg-4 fs-5 fw-semibold">
+                        <a class="nav-link " href="/about" >About</a>
+                      </li>
+                      <li class="nav-item px-lg-3 fs-5 fw-semibold">
+                        <a class="nav-link " href="/blog">Blog</a>
+                      </li>
+                
+              </ul>
+        </div>
+        <div class="ms-md-auto text-center">
+                <button class="btn btn-success text-light px-3 py-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Join our waitlist</button>
+          </div>
+      </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="staticBackdrop"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body waitlist-modal">
+          <div class="success"><h2 class="primcol fw-bold text-center">You have successfully registered!!</h2></div>
+          <form id="form">
+              <div class="mb-3">
+                  <label for="FormControlInput1" class="form-label name" >Name</label>
+                  <input type="text" class="form-control" id="FormControlInput1" placeholder="Please input your name" name="name" required>
+                </div>
+              <div class="mb-3">
+                  <label for="FormControlInput2" class="form-label email">Email address</label>
+                  <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com" name="email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label phone">Location</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="which city are you located in?" name="city" required>
+              </div>
+              <div class="mb-3">
+                  <label for="select" class="form-label">Gender</label>
+                  <select class="form-select gender" aria-label="Default select example" id="select" name="gender">
+                      <option selected>Choose your Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                  </select>
+                  <p class="roleError text-danger fw-bold ps-2 mt-1">Please Select your Gender</p>
+              </div>
+              
+
+              
+              <button type="submit" id="join" class="btn btn-custom fw-bold mt-3">Join Waitlist</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const form = document.getElementById('form');
+  let genderError = document.querySelector('.roleError')
+  let success = document.querySelector('.success')
+  genderError.style.display = 'none'
+  success.style.display = 'none'
+
+  form.addEventListener('submit', (e)=>{
+      e.preventDefault()
+      let gender = document.querySelector('.gender').value
+      // console.log(role)
+      if (gender == 'Choose your Gender'){
+          genderError.style.display = 'block'
+      } else{
+          genderError.style.display = 'none'
+          const formData = new FormData(form);
+          const payload = new URLSearchParams(formData);
+
+          fetch('/waitlist',{
+              method: 'POST',
+              body: payload
+          }).then(res => res.json())
+
+          form.style.display = 'none'
+          success.style.display = 'block'
+      }
+
+  })
+</script>
