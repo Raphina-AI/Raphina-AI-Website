@@ -7,24 +7,34 @@ body{
     font-family: 'Comfortaa';
     max-width: 100%;
     background-color: white;
-    font-family: 'Gantari', sans-serif;
+    font-family: 'Nunito', sans-serif;
     overflow-x: hidden;
 }
 
+.sticky-top{
+    position: sticky;
+    top: 10px !important; 
+}
 .navbar-custom{
-    background-color: white;
-    opacity: 90%;
+    background-color: #006633;
+    /* opacity: 90%; */
+}
+
+.mymargins{
+    margin-left: 7rem !important;
+    margin-right: 7rem !important;    
+    border-radius: 50px;
 }
 
 
 .custom-toggler .navbar-toggler-icon{
     /* background-color: #42c2ff; */
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 102, 51)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     
 }
 .navbar-toggler{
     border: none;
-    color: white;
+    color: rgb(0, 102, 51);
 }
 
 .color1{
@@ -81,12 +91,28 @@ body{
     --bs-card-border-radius: 15px;
 }
 @media screen and (max-width : 1200px){
+    .sticky-top{
+        position: sticky;
+        top: 0 !important; 
+    }
+    .navbar-custom{
+        margin: 0 !important;
+        border-radius: 0;
+    }
     .img-size{
         scale: 0.9;
         
     }
 }
 @media screen and (max-width : 992px){
+    .sticky-top{
+        position: sticky;
+        top: 0 !important; 
+    }
+    .navbar-custom{
+        margin: 0 !important;
+        border-radius: 0;
+    }
     .img-size{
         scale: 0.8;
     }
@@ -95,6 +121,7 @@ body{
     }
 }
 @media screen and (max-width : 850px){
+    
     .img-size{
         scale: 0.7;
     }
@@ -149,84 +176,84 @@ footer a{
     left: 56%;
     top: 10%;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design2{
     position: absolute;
     left: 23%;
-    top: 10%;
+    top: 25%;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design3{
     position: absolute;
-    left: 23%;
-    top: 70%;
+    left: 70%;
+    top: 50%;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design4{
     position: absolute;
     left: 56%;
     top: 70%;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design5{
     position: absolute;
     left: 56%;
     top: 800px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design6{
     position: absolute;
     left: 23%;
     top: 800px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design7{
     position: absolute;
     left: 23%;
     top: 1150px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design8{
     position: absolute;
     left: 56%;
     top: 1150px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design9{
     position: absolute;
     left: 56%;
     top: 1700px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design10{
     position: absolute;
     left: 23%;
     top: 1700px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design11{
     position: absolute;
     left: 23%;
     top: 2100px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .design12{
     position: absolute;
     left: 56%;
     top: 2100px;
     scale: 0.8;
-    z-index: 1;
+    z-index: -1;
 }
 .eclipse1{
     position: absolute;
@@ -257,12 +284,14 @@ footer a{
     right: 20px;
     top: 1800px;
     scale: 0.7;
+    z-index: -1;
 }
 .eclipse6{
     position: absolute;
     left: 20px;
     top: 2200px;
     scale: 0.7;
+    z-index: -1;
 }
 .spaced{
     letter-spacing: 3px;

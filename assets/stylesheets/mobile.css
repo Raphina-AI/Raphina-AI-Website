@@ -1,163 +1,171 @@
+
 .design1{
     position: absolute;
-    left: 10rem;
-    top: 0px;
-    scale: 0.4;
+    left: 15rem;
+    top: 100px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design2{
     position: absolute;
-    left: -1.5rem;
-    top: 0px;
-    scale: 0.4;
+    left: 1.2rem;
+    top: 250px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design3{
     position: absolute;
-    left: -1.5rem;
-    top: 200px;
-    scale: 0.4;
+    left: 1.5rem;
+    top: 650px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design4{
     position: absolute;
     left: 10rem;
-    top: 200px;
-    scale: 0.4;
-    z-index: 1;
+    top: 900px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design5{
     position: absolute;
-    left: 150px;
-    top: 700px;
-    scale: 0.4;
+    left: 15px;
+    top: 1100px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design6{
     position: absolute;
-    left: -25px;
-    top: 700px;
-    scale: 0.4;
+    left: 25px;
+    top: 1700px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design7{
     position: absolute;
-    left: -25px;
-    top: 900px;
-    scale: 0.4;
+    right: -2rem;
+    top: 1300px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design8{
     position: absolute;
     left: 150px;
-    top: 900px;
-    scale: 0.4;
-    z-index: 1;
+    top: 1900px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design9{
     position: absolute;
     left: 150px;
-    top: 1450px;
-    scale: 0.4;
-    z-index: 1;
+    top: 2600px;
+    scale: 0.7;
+    z-index: -1;
 }
 .design10{
     position: absolute;
-    left: -25px;
+    left: 200px;
     top: 1450px;
-    scale: 0.4;
-    z-index: 1;
+    scale: 0.7;
+    z-index: -1;
 }
 .design11{
     position: absolute;
-    left: -25px;
+    left: 200px;
     top: 2000px;
-    scale: 0.4;
-    z-index: 1;
+    scale: 0.7;
+    z-index: -1;
 }
 .design12{
     position: absolute;
-    left: 150px;
-    top: 2000px;
-    scale: 0.4;
-    z-index: 1;
+    left: 0px;
+    top: 2300px;
+    scale: 0.7;
+    z-index: -1;
 }
 .eclipse1, .eclipse2, .eclipse3, .eclipse4, .eclipse5, .eclipse6 {
     display: none;
+    z-index: -1;
 }
 
-@media screen and (max-width : 400px){
+/* @media screen and (max-width : 400px){
     .design1{
         position: absolute;
         left: 8rem;
         top: 0px;
-        scale: 0.4;
+        scale: 0.7;
     }
     .design2{
         position: absolute;
         left: -2rem;
         top: 0px;
-        scale: 0.4;
+        scale: 0.7;
     }
     .design3{
         position: absolute;
         left: -2rem;
         top: 200px;
-        scale: 0.4;
+        scale: 0.7;
     }
     .design4{
         position: absolute;
         left: 8rem;
         top: 200px;
-        scale: 0.4;
-        z-index: 1;
+        scale: 0.7;
+        
     }
     .design5{
         position: absolute;
         left: 8rem;
         top: 700px;
-        scale: 0.4;
+        scale: 0.7;
     }
     .design6{
         position: absolute;
         left: -2rem;
         top: 700px;
-        scale: 0.4;
+        scale: 0.7;
     }
     .design7{
         position: absolute;
         left: -2rem;
         top: 900px;
-        scale: 0.4;
+        scale: 0.7;
     }
     .design8{
         position: absolute;
         left: 8rem;
         top: 900px;
-        scale: 0.4;
-        z-index: 1;
+        scale: 0.7;
+        
     }
     .design9{
         position: absolute;
         left: 8rem;
         top: 1450px;
-        scale: 0.4;
-        z-index: 1;
+        scale: 0.7;
+        
     }
     .design10{
         position: absolute;
         left: -2rem;
         top: 1450px;
-        scale: 0.4;
-        z-index: 1;
+        scale: 0.7;
+        
     }
     .design11{
         position: absolute;
         left: -2rem;
         top: 2000px;
-        scale: 0.4;
-        z-index: 1;
+        scale: 0.7;
+        
     }
     .design12{
         position: absolute;
         left: 8rem;
         top: 2000px;
-        scale: 0.4;
-        z-index: 1;
+        scale: 0.7;
+        
     }
 }
 @media screen and (max-width : 350px){
@@ -170,7 +178,7 @@
     .card{
         width: 14rem;
     }
-}
+} */
 
 .spaced{
     letter-spacing: normal;
