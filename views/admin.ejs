@@ -7,7 +7,38 @@
     <%- include('partials/headlinks') %>
 </head>
 <body>
-    <h1>This is the Admin Page</h1>
-    <a href="/exportwaitlist">export</a>
+    <div class="px-sm-5 py-3 px-2">
+        <div class=" text-center">
+            <p class="color1 about-title fs-2 fw-semibold p-2 float-none">Waitlisted Users</p>
+            <p class="float-end" ><a href="/exportwaitlist" class="btn btn-success btn">Export</a></p>
+        </div>
+        <div>
+            
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <ol>
+
+                        <% waitlists.forEach(waitlist =>{ %>
+                            <li>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<%= waitlist.id %>" aria-expanded="false" aria-controls="<%= waitlist.id %>">
+                                            Name: <%= waitlist.name %>
+                                        </button>
+                                    </h2>
+                                    <div id="<%= waitlist.id %>" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p>Email: <%= waitlist.email %> </p>
+                                            <p>City: <%= waitlist.city %> </p>
+                                            <p>Gender: <%= waitlist.gender %> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        <% }) %>
+                    </ol>
+                </div>                
+            
+        </div>
+    </div>
 </body>
 </html>

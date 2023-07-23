@@ -194,15 +194,15 @@ footer a{
 }
 .design4{
     position: absolute;
-    left: 56%;
+    left: 46%;
     top: 70%;
     scale: 0.8;
     z-index: -1;
 }
 .design5{
     position: absolute;
-    left: 56%;
-    top: 800px;
+    left: 76%;
+    top: 900px;
     scale: 0.8;
     z-index: -1;
 }
@@ -215,42 +215,69 @@ footer a{
 }
 .design7{
     position: absolute;
-    left: 23%;
-    top: 1150px;
+    left: 13%;
+    top: 1100px;
     scale: 0.8;
     z-index: -1;
 }
 .design8{
     position: absolute;
-    left: 56%;
-    top: 1150px;
+    right: 0;
     scale: 0.8;
     z-index: -1;
 }
 .design9{
     position: absolute;
-    left: 56%;
-    top: 1700px;
+    left: 66%;
+    top: 1600px;
     scale: 0.8;
     z-index: -1;
 }
 .design10{
     position: absolute;
-    left: 23%;
+    left: 12%;
     top: 1700px;
     scale: 0.8;
     z-index: -1;
 }
 .design11{
     position: absolute;
-    left: 23%;
-    top: 2100px;
+    left: 30%;
+    top: 1950px;
     scale: 0.8;
     z-index: -1;
 }
 .design12{
     position: absolute;
-    left: 56%;
+    left: 70%;
+    top: 2100px;
+    scale: 0.8;
+    z-index: -1;
+}
+.design13{
+    position: absolute;
+    left: 70%;
+    top: 2650px;
+    scale: 0.8;
+    z-index: 10;
+}
+.design14{
+    position: absolute;
+    left: 45%;
+    top: 2650px;
+    scale: 0.8;
+    z-index: 10;
+}
+.design15{
+    position: absolute;
+    left: 20%;
+    top: 2650px;
+    scale: 0.8;
+    z-index: 10;
+}
+.design16{
+    position: absolute;
+    left: 70%;
     top: 2100px;
     scale: 0.8;
     z-index: -1;
@@ -317,4 +344,43 @@ footer a{
     --bs-btn-color: white;
     --bs-btn-hover-bg: rgba(202, 132, 2, 0.87);
     --bs-btn-border-radius: 20px;
+}
+
+.accordion{
+    --bs-accordion-color: black;
+    --bs-accordion-bg: white;
+    --bs-accordion-btn-color: black;
+    --bs-accordion-btn-bg: white;
+    --bs-accordion-btn-focus-border-color: white;
+    --bs-accordion-btn-focus-box-shadow: white;
+    --bs-accordion-active-color: black;
+    --bs-accordion-active-bg: white;
+    --bs-accordion-border-color: white;
+    --bs-accordion-border-width: 0px
+}
+.card-body{
+    z-index: 100;
+}
+
+footer{
+    position: relative;
+}
+
+.footer1{
+    position: absolute;
+    left: 0;
+    bottom: 140px;
+    z-index: -1;
+}
+.footer2{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    z-index: -1;
+}
+.footer3{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    z-index: -1;
 }
