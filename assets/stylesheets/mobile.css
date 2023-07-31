@@ -1,4 +1,6 @@
-
+.main-bg{
+    height: 100dvh;
+}
 .design1{
     position: absolute;
     left: 15rem;

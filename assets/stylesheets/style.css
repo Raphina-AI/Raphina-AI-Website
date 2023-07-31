@@ -8,24 +8,13 @@ body{
     max-width: 100%;
     background-color: white;
     font-family: 'Nunito', sans-serif;
-    overflow-x: hidden;
 }
 
-.sticky-top{
-    position: sticky;
-    top: 10px !important; 
-}
 .navbar-custom{
-    background-color: #006633;
-    /* opacity: 90%; */
+    background-color: rgba(0, 102, 51, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(30px);
 }
-
-.mymargins{
-    margin-left: 7rem !important;
-    margin-right: 7rem !important;    
-    border-radius: 50px;
-}
-
 
 .custom-toggler .navbar-toggler-icon{
     /* background-color: #42c2ff; */
@@ -41,13 +30,19 @@ body{
     color: rgb(0, 102, 51);
 }
 
+.main-bg{
+    background-image: url(/assets/images/Hero\ Image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100dvh;
+}
+
 .transformed{
     transform: translateY(100px);
 }
 
-
-
-.green-box1{
+/* .green-box1{
     width: 80px;
     height: 130px;
     background-color: rgb(202, 132, 2);
@@ -64,7 +59,7 @@ body{
     position: absolute;
     right: 0;
     top: 400px;
-}
+} */
 
 
 .img-size{
@@ -88,40 +83,27 @@ body{
 }
 
 .card{
-    --bs-card-border-radius: 15px;
+    --bs-card-border-width: 0px;
+    width: 20rem;
 }
+
 @media screen and (max-width : 1200px){
-    .sticky-top{
-        position: sticky;
-        top: 0 !important; 
-    }
-    .navbar-custom{
-        margin: 0 !important;
-        border-radius: 0;
-    }
     .img-size{
         scale: 0.9;
-        
     }
 }
 @media screen and (max-width : 992px){
-    .sticky-top{
-        position: sticky;
-        top: 0 !important; 
-    }
-    .navbar-custom{
-        margin: 0 !important;
-        border-radius: 0;
-    }
     .img-size{
         scale: 0.8;
     }
     .card{
-        width: 20rem;
+        width: 15rem;
     }
 }
 @media screen and (max-width : 850px){
-    
+    .card{
+        width: 15rem;
+    }
     .img-size{
         scale: 0.7;
     }
@@ -151,6 +133,9 @@ body{
         right: 0;
         top: 560px;
         width: 60px;
+    }
+    .card{
+        width: 20rem;
     }
 }
 @media screen and (max-width : 600px){
@@ -358,9 +343,6 @@ footer a{
     --bs-accordion-border-color: white;
     --bs-accordion-border-width: 0px
 }
-.card-body{
-    z-index: 100;
-}
 
 footer{
     position: relative;
@@ -382,5 +364,26 @@ footer{
     position: absolute;
     left: 50%;
     bottom: 0px;
+    z-index: -1;
+}
+
+.img-size2{
+    width: 398px;
+    height: 288px;
+}
+
+.orange-bg{
+    background-color: #e28838;
+}
+.green-div{
+    width: 100%;
+    height: 150px;
+    background-color: #006633be;
+}
+
+.orange-div{
+    width: 100%;
+    height: 200px;
+    background-color: #e28838;
     z-index: -1;
 }
