@@ -125,6 +125,7 @@
     z-index: -1;
 }
 .design19{
+    display: none;
     position: absolute;
     left: 30%;
     top: 3450px;
@@ -136,7 +137,7 @@
     left: 20%;
     top: 5000px;
     scale:0.7;
-    z-index: 10;
+    z-index: -1;
 }
 .design21{
     position: absolute;
@@ -150,9 +151,10 @@
     left: 50%;
     top: 4550px;
     scale:0.7;
-    z-index: 10;
+    z-index: -1;
 }
 .design23{
+    display: none;
     position: absolute;
     left: 200px;
     top: 4000px;
