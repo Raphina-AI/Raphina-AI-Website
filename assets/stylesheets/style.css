@@ -461,3 +461,7 @@ footer{
     background-color: #e28838;
     z-index: -1;
 }
+
+.img-rounded{
+    border-radius: 50%;
+}
